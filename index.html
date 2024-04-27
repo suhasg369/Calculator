@@ -10,12 +10,14 @@
     <h2>Addition:</h2>
     <label>First Number:</label><input type="number" id="fnadd"><br>
     <label>Second Number:</label><input type="number" id="snadd">
-    <p id="sum">Sum:</p>
+    <button onClick=sum()>Calculate</button>
     <script>
+      function sum(){
       var fnadd = document.getElementById('fnadd').value;
       var snadd = document.getElementById('snadd').value;
       var sum = fnadd + snadd;
       document.write("Sum = " + sum)
+      }
     </script>
   </body>
 </html>
