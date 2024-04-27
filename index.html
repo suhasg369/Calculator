@@ -13,9 +13,9 @@
     <button onClick=sum()>Calculate</button>
     <script>
       function sum(){
-      var fnadd = document.getElementById('fnadd').value;
-      var snadd = document.getElementById('snadd').value;
-      var sum = fnadd + snadd;
+      var fnadd = parseFloat(document.getElementById('fnadd').value);
+      var snadd = parseFloat(document.getElementById('snadd').value);
+      var sum = parseFloat(fnadd + snadd);
       document.write("Sum = " + sum)
       }
     </script>
