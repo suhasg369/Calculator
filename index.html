@@ -7,8 +7,15 @@
       <h1>Calculator</h1>
       <p>By Suhas G and Goutham R Gowda</p>
     </header>
-    Addition:
-    <label>First Number:</label><input type="number" id="fnadd">
+    <h2>Addition:</h2>
+    <label>First Number:</label><input type="number" id="fnadd"><br>
     <label>Second Number:</label><input type="number" id="snadd">
+    <p id="sum">Sum:</p>
+    <script>
+      var fnadd = document.getElementById('fnadd').value;
+      var snadd = document.getElementById('snadd').value;
+      var sum = fnadd + snadd;
+      document.write("Sum = " + sum)
+    </script>
   </body>
 </html>
